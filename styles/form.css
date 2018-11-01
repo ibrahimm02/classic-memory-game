@@ -1,0 +1,152 @@
+/* CSS for Forms; Registration & Login */
+img#logo { 
+	margin-right:90px;
+    width:80px;
+    position: absolute;
+    left: auto;
+    top: auto;
+}
+div#regform {
+    width: 450px;
+	height:625px;
+	margin: 30px auto 0; 
+	padding: 20px 35px; 
+	color: white;
+    background: rgba(52,73,94,0.5);
+	border-radius: 50px 0; 
+	box-shadow: 0 0 30px black;
+}
+
+label {  
+	margin-left: 50px;
+	font-size: 20px;
+    font-family: 'Arima Madurai', cursive;
+	font-weight:inherit;
+}
+
+input#userNameInput { 
+	margin-left: 50px;
+	border: 1px solid #DADADA;
+	margin-top: 10px;
+	padding-left: 35px;
+	width: 310px; 
+	height: 30px; 
+	font-size: 14px;
+	background-image: url(../images/name.png);
+	background-repeat: no-repeat;
+	background-position: 6px;
+    box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px;	/* for I.E */
+	-moz-box-shadow: 0 0 10px;	/* for Mozilla web browser*/
+    border-radius: 5px;
+	-webkit-border-radius: 5px;	/* for I.E */
+	-moz-border-radius: 5px; 	/* for Mozilla web browser*/
+}
+
+input#emailInput { 
+	margin-left: 50px;
+    border: 1px solid #DADADA;
+	margin-top: 10px;
+	padding-left: 35px;
+	width: 310px; 
+	height: 30px; 
+	font-size: 14px;
+    background-image: url(../images/email.png);
+	background-repeat: no-repeat;
+	background-position: 6px;
+	box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px;	/* for I.E */
+	-moz-box-shadow: 0 0 10px;	/* for Mozilla web browser*/
+     border-radius: 5px;
+	-webkit-border-radius: 5px;	/* for I.E */
+	-moz-border-radius: 5px;	/* for Mozilla web browser*/
+}
+
+input#passwordInput, #confirmPasswordInput { 
+	margin-left: 50px;
+	border: 1px solid #DADADA;
+	margin-top: 10px;
+	padding-left: 35px;
+	width: 310px;
+	height: 30px; 
+	font-size: 14px;
+	background-image: url(../images/password.png);
+	background-repeat: no-repeat;
+	background-position: 6px;
+    box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px;	/* for I.E */
+	-moz-box-shadow: 0 0 10px;	/* for Mozilla web browser*/
+	border-radius: 5px;
+	-webkit-border-radius: 5px;	 /* for I.E */
+	-moz-border-radius: 5px;	/* for Mozilla web browser*/
+}
+
+input#dateOfBirthInput {   
+    margin-left: 50px;
+	background-image: url(../images/dob.png);
+	background-repeat: no-repeat;
+	background-position: 6px;
+	border: 1px solid #DADADA;
+	margin-top: 10px;
+	padding-left: 35px;
+	width: 310px; 
+	height: 30px; 
+	font-size: 14px;
+	box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px; /* for I.E */
+	-moz-box-shadow: 0 0 10px;  /* for Mozilla web browser*/
+	border-radius: 5px;
+	-webkit-border-radius: 5px;  /* for I.E */
+	-moz-border-radius: 5px;	/* for Mozilla web browser*/
+}
+
+input#phoneNumberInput { 
+    margin-left: 50px;
+	border: 1px solid #DADADA;
+	margin-top: 10px;
+	padding-left: 35px;
+	width: 310px; 
+	height: 30px; 
+	font-size: 14px;
+    background-image: url(../images/mobile.png);
+	background-repeat: no-repeat;
+	background-position: 6px;
+	box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px;	/* for I.E */
+	-moz-box-shadow: 0 0 10px;	/* for Mozilla web browser*/
+     border-radius: 5px;
+	-webkit-border-radius: 5px;	/* for I.E */
+	-moz-border-radius: 5px;	/* for Mozilla web browser*/
+}
+	
+input#submit {
+	
+	background-color:dodgerblue;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px #949494;
+    box-shadow: 0 0 30px black;
+    margin-top:20px;
+	margin-left:175px;
+    cursor: pointer;
+}
+/* Submit button changes color when hovered */
+input#submit:hover {
+	background-color:#80A24A;		 
+    box-shadow: 0 0 30px white;
+}
+
+#error{
+	color:#F00;
+	text-align: center;
+    font-variant:small-caps;
+	font-size: 20px;
+	}
+	
+#loginMessage{
+	
+    font-size:20px;
+}

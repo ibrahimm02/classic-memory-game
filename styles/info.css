@@ -1,0 +1,83 @@
+/* CSS for Game Information modal window; How to Play */
+#info{
+    border-radius: 10px 0px;
+	border-style: groove;
+   	border-color: white;
+    background-image: url(../images/button.jpg);
+    width: 115px;
+    height: 20px;
+    padding:8px 5px 5px 10px;
+    margin:450px auto 20px;
+}
+#info a{
+    font-family: 'Yellowtail', cursive;
+    text-transform:uppercase;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+}
+/* Link to modal window changes color when hovered */  
+#info a:hover {
+    color:black;
+}
+.infoWindow {
+    position: fixed;
+    font-family: arial;
+    color:white;
+    font-size:80%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2); /* creates a transparent background for the forms */
+    z-index: 9999;
+    opacity:0;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.infoHeader h2 { 
+    color: #189CDA;
+    padding:0px;
+    border-bottom: 2px groove #efefef; 
+}
+.infoWindow:target {
+    opacity:1;
+    pointer-events: auto;
+}
+/* the body of the modal window */
+.infoWindow > div {
+    width: 500px;
+    position: relative;
+    margin: 150px auto;
+    border-style:solid;
+    border-width:2px 2px 2px 2px;
+    border-radius: 25px;
+    background-image: url(../images/back.jpg);
+}
+.infoWindow .infoHeader { 
+    padding: 5px 20px 0px 20px; 
+}
+.infoWindow .infoContent { 
+    padding: 0px 20px 5px 20px; 
+}
+ 
+.ok {
+    background: #606061;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2px;
+    width:80px;
+    float:right;
+    margin: 5px 50px 20px 100px;
+}
+.ok:hover { 
+    background: #189CDA; 
+}
+
+.clear { 
+    clear: both; /* no floating elements allowed either left or right */
+}
+ 

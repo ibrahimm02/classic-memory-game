@@ -1,0 +1,196 @@
+/* CSS for the whole website layout */
+
+/* displays an animation for the website background */
+body {
+	background-size: cover;
+  	background-image: url(../images/img1.png), url(../images/555.jpg);
+  	background-repeat: repeat-x, repeat-x;
+  	animation: animated_background linear 100s infinite;
+	}
+@keyframes animated_background {
+/* starts from opposite sides */
+from {
+  	background-position: 0px 0px, -1000px 0px; 
+  	} 
+to {
+   	background-position: -2000px 0px, 0px 0px;
+ 	}
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
+
+h1 {
+    color:white;
+    font-size:40px;
+    text-align: center;
+    text-shadow: 2px 2px 4px red;
+    font-family: 'Fontdiner Swanky', cursive;
+    font-style: normal;
+}
+h2 {
+    color:white;
+    font-size:42px;
+    text-align: center;
+    font-variant:small-caps;
+    font-family:'Montez', cursive;
+}
+h3 {
+    color:white;
+    font-size:15px;
+    font-family: ;
+    text-align: center;
+    font-variant:small-caps;
+}
+h4 {
+    color:white;
+    font-size:15px;
+    font-family: 'BioRhyme', serif;
+    text-align: center;
+    font-variant:small-caps;
+    
+}
+h5 {
+    color:white;
+    font-size:25px;
+    font-family: ;
+    text-align: center;
+    font-variant:small-caps;
+    
+}
+/* website navgation bar */
+.navigation {
+	border-radius: 25px 10px;
+	box-shadow: 0 0 30px Gray;
+	width: 750px;
+	height: 50px;
+	background-image:url(../images/navi.jpg);
+	margin: 0 auto 20px;
+    }
+.table {
+	display: table;   
+	margin: 0 auto;
+	}
+ul#horizontal-list {
+	min-width: 0px;  
+    list-style: none;
+	padding-top: 0px;
+}
+li {
+	float:left;
+}
+li a {
+    display: inline;
+    text-transform:uppercase;
+    font-family: 'Yellowtail', cursive;
+    color: white;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+li a:hover, a.active {
+    color:black;
+    border-style:solid;
+    border-radius: 10px 0px;
+    background-image:url(../images/button.jpg);
+}
+/* end of navigation bar */
+/* the second row in the website has animated background */
+.row2 {
+	
+	border-radius: 75px/30px;
+	box-shadow: 0 0 30px Gray; 
+    background-size:cover;
+	width: 1000px;
+	height: auto;
+    padding: 10px 0px 20px 0px;
+	margin:0 auto 20px;
+    background-image: url(../images/img1.png), url(../images/gameback.jpg);
+   	background-repeat: repeat-x, repeat-x;
+  	animation: ani_row linear 100s infinite;
+    }
+@keyframes ani_row {
+
+from { /* this does not move */
+  	background-position:  -1000px 0px,0px 0px; 
+  	} 
+to { /* this moves from left to right */
+   	background-position:  0px 0px,0px 0px;
+ 	}
+}
+
+.gameBack {
+    
+    border-radius: 75px/30px;
+    
+    box-shadow: 0 0 30px Gray;
+    
+    background-size:cover;
+    width: 1000px;
+    height: auto;
+    padding: 10px 0px 20px 0px;
+    margin:0 auto 20px;
+    background-image: url(../images/gameback.jpg)
+}
+
+/* footer for the website */
+.footer {
+	border-radius: 35px 10px;
+    box-shadow: 0 0 30px Gray;
+	background-image:url(../images/row3.jpg);
+	width: 750px;
+	height: 50px;
+    padding-top: 5px;
+	margin:0 auto 20px;
+}
+/* rankings page  table */
+table {
+        
+        border-radius: 75px/30px;
+        margin:auto;
+        padding: 20px 50px 50px 50px;
+        background: rgba(52,73,94,0.4);
+        box-shadow: 0 0 30px black;
+}
+th {
+        padding: 0px 50px;
+        text-align:center;
+        border:3px groove #ddd;
+        border-spacing: 5px;
+        border-radius:5px;
+        font-family: 'BioRhyme', serif;
+        font-variant:small-caps;
+        color:white;
+        font-size:30px;
+}
+td {
+        padding: 5px;
+        text-align:center;
+        border-bottom:1px solid #ddd;
+        border-spacing: 5px;
+        border-radius: 10px;
+        font-family: 'BioRhyme', serif;
+        font-variant:small-caps;
+        color:white;
+        font-size:20px;
+}
+tr:hover {
+    background-image:url(../images/button.jpg);
+}
+
+div#memory_board{
+    background: url(../images/gameback.jpg) no-repeat;
+	background-size: cover;
+   
+    border-radius: 10px;
+    width:750px;
+    height:600px;
+    padding:24px;
+    margin:0px auto;
+}
+
+
+    

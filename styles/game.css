@@ -1,0 +1,215 @@
+
+button{
+    
+    margin: 0px auto;
+    border: none;
+    border-radius: 5px;
+    width: 650px;
+    height: 500px;
+    background: url(../images/tap1.png);
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+}
+
+#moves {
+    text-align: left;
+    color:white;
+    font-family: "Lucida Console", Monaco, monospace;
+    width: 33%;
+    font-size:20px;
+
+}
+
+#pairs {
+    text-align: right;
+    color:white;
+    font-family: "Lucida Console", Monaco, monospace;   
+    font-size: 20px;
+    width: 33%;
+    
+}
+
+
+.lock {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 4;
+}
+
+.container, .header {
+    width:900px;
+    height:auto;
+    padding:0px;
+    margin:0px auto;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/* Cards */
+
+.front, .blank {
+    margin: 10px;
+}
+
+.front {
+    background: url(../images/front3.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: 0 0 15px white;
+    
+    border-radius: 15px;
+    width: 125px;
+    height: 125px;
+    
+}
+
+.front:hover{
+    box-shadow: 0 0 15px black;
+}
+
+.blank {
+    background: none;
+    border: 0 solid black;
+    width: 125px;
+    height: 125px;
+}
+
+.back0, .back1, .back2, .back3, .back4, .back5, .back6, .back7, .back8, .back9, .back10, .back11 {
+    
+    border-radius: 25px;
+    width: 125px;
+    height: 125px;
+    margin: 10px;
+    box-shadow: 0 0 25px black;
+    z-index: 5;
+
+}
+
+.back0 { 
+    background: url(../images/back0.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+}
+
+.back1 { 
+    background: url(../images/back1.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+}
+
+.back2 { 
+    background: url(../images/back2.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+}
+
+.back3 { 
+    background: url(../images/back3.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+}
+
+.back4 { 
+    background: url(../images/back4.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+}
+
+.back5 { 
+    background: url(../images/back5.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+}
+
+.back6 { 
+    background: url(../images/back6.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+}
+
+.back7 { 
+    background: url(../images/back7.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+}
+
+.back8 { 
+    background: url(../images/back8.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+}
+
+.back9 {
+    background: url(../images/back9.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+}
+
+.back10 { 
+    background: url(../images/back10.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+}
+
+.back11 { 
+    background: url(../images/back11.gif);
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+}
+
+/* Play Again */
+.wellDone {
+   
+    margin-top: 150px;
+    padding: 15px 15px 10px 15px;
+}
+
+
+.replay-container {
+    position: absolute;
+    border-radius: 25px;
+    background-image: url(../images/playagain.jpg);
+    background-color: rgba(0, 77, 128, 1);
+    background-size: cover;
+    width: 900px;
+    height: 600px;
+    z-index: 3;
+    margin: 50px 0px 0px 50px;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    box-shadow: 0 0 20px Black;
+}
+
+.replay {
+    position: relative;
+    background-color: #1299C5;
+    width: 100px;
+    height: 30px;
+    font-size: 22px;
+    margin: 40px auto 0px auto;
+    padding: 15px 15px 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px black;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.replay:hover {
+    box-shadow: 0 0 20px white;
+}
